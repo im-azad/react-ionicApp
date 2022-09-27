@@ -29,6 +29,7 @@ import "./theme/variables.css";
 import Outbox from "./pages/Outbox";
 import Dashboard from "./pages/Dashboard";
 import Page1 from "./pages/Page1";
+import Home from "./pages/Home";
 
 setupIonicReact();
 
@@ -39,8 +40,11 @@ const App: React.FC = () => {
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
-            <Route path="/page/dashboard" component={Dashboard} />
-            <Redirect exact from="/" to="/page/dashboard" />
+            <Route path="/">
+              <Redirect to="/page/home" />
+            </Route>
+            <Route path="/page/home" component={Home} exact={true} />
+            <Route path="/page/dashboard" component={Dashboard} exact={true} />
             <Route path="/page/outbox" component={Outbox} exact={true} />
             <Route path="/page/page1" component={Page1} exact={true} />
           </IonRouterOutlet>

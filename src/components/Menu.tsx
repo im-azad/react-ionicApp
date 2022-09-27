@@ -12,6 +12,7 @@ import {
 
 import { useLocation } from "react-router-dom";
 import {
+  bookSharp,
   heartOutline,
   heartSharp,
   mailOutline,
@@ -29,6 +30,12 @@ interface AppPage {
 }
 
 const appPages: AppPage[] = [
+  {
+    title: "Home",
+    url: "/page/home",
+    iosIcon: bookSharp,
+    mdIcon: bookSharp,
+  },
   {
     title: "Dashboard",
     url: "/page/dashboard",
@@ -71,7 +78,7 @@ const Menu: React.FC = () => {
   const location = useLocation();
 
   return (
-    <IonMenu contentId="main" type="overlay">
+    <IonMenu contentId="main" menuId="sideMenu" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
           <IonListHeader>Dashboard</IonListHeader>
