@@ -1,4 +1,6 @@
 import {
+  IonAccordion,
+  IonAccordionGroup,
   IonButton,
   IonButtons,
   IonCol,
@@ -82,6 +84,44 @@ const Home = () => {
                 >
                   Open
                 </IonButton>
+              </IonCol>
+            </IonRow>
+            <IonRow>
+              <IonCol size="12">
+                <IonAccordionGroup expand="inset">
+                  <IonAccordion value="first">
+                    <IonItem slot="header" color="rose">
+                      <IonLabel>First Accordion Button</IonLabel>
+                    </IonItem>
+                    <div className="ion-padding" slot="content">
+                      First Content Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Eum ipsa sequi eligendi magni et, quos
+                      ad necessitatibus. Quod modi ipsam doloremque maiores
+                      necessitatibus. Quas, soluta quaerat quisquam accusamus
+                      unde numquam!
+                    </div>
+                  </IonAccordion>
+                  <IonAccordion value="second">
+                    <IonItem slot="header" color="rose">
+                      <IonLabel>Second Accordion Button</IonLabel>
+                    </IonItem>
+                    <div className="ion-padding" slot="content">
+                      Second Content Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Cumque omnis sed maxime nobis quam
+                      distinctio ipsam beatae? Ex dignissimos, itaque pariatur
+                      eos, recusandae dolorum deleniti libero beatae,
+                      perferendis placeat voluptate.
+                    </div>
+                  </IonAccordion>
+                  <IonAccordion value="third">
+                    <IonItem slot="header" color="rose">
+                      <IonLabel>Third Accordion Button</IonLabel>
+                    </IonItem>
+                    <div className="ion-padding" slot="content">
+                      Third Content
+                    </div>
+                  </IonAccordion>
+                </IonAccordionGroup>
               </IonCol>
             </IonRow>
           </IonGrid>

@@ -30,6 +30,7 @@ import Outbox from "./pages/Outbox";
 import Dashboard from "./pages/Dashboard";
 import Page1 from "./pages/Page1";
 import Home from "./pages/Home";
+import InfiniteScroll from "./pages/InfiniteScroll";
 
 setupIonicReact();
 
@@ -47,6 +48,11 @@ const App: React.FC = () => {
             <Route path="/page/dashboard" component={Dashboard} exact={true} />
             <Route path="/page/outbox" component={Outbox} exact={true} />
             <Route path="/page/page1" component={Page1} exact={true} />
+            <Route
+              path="/page/infiniteScroll"
+              component={InfiniteScroll}
+              exact={true}
+            />
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>

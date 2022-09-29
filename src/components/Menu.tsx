@@ -12,6 +12,8 @@ import {
 
 import { useLocation } from "react-router-dom";
 import {
+  archiveOutline,
+  archiveSharp,
   bookSharp,
   heartOutline,
   heartSharp,
@@ -54,12 +56,12 @@ const appPages: AppPage[] = [
     iosIcon: heartOutline,
     mdIcon: heartSharp,
   },
-  // {
-  //   title: "Archived",
-  //   url: "/page/Archived",
-  //   iosIcon: archiveOutline,
-  //   mdIcon: archiveSharp,
-  // },
+  {
+    title: "InfiniteScroll Page",
+    url: "/page/infinitescroll",
+    iosIcon: archiveOutline,
+    mdIcon: archiveSharp,
+  },
   // {
   //   title: "Trash",
   //   url: "/page/Trash",
